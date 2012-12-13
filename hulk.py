@@ -1,7 +1,10 @@
 import sys, subprocess
 
 def mustache_compile(*args):
-    p = subprocess.Popen(['hulk', args[0][1]], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell = True)
+    if sys.platform.startswith('win'):
+        p = subprocess.Popen(['hulk', args[0][1]], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell = True)
+    else:
+        p = subprocess.Popen(['hulk', args[0][1]], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = p.communicate()
     f = open(args[0][2], "w")
     try:

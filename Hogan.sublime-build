@@ -1,0 +1,4 @@
+{
+	"cmd": ["python", "$packages/Hogan Build/hulk.py", "$file", "${file_path}/${file_base_name}.js"],
+	"selector": "source.mustache"
+}

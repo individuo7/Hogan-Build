@@ -1,4 +1,14 @@
 {
-	"cmd": ["python", "$packages/Hogan Build/hulk.py", "$file", "${file_path}/${file_base_name}.js"],
-	"selector": "source.mustache"
+    "cmd": ["python", "$packages/Hogan-Build/hulk.py", "$file", "${file_path}/${file_base_name}.js"],
+    "selector": "source.mustache",
+
+    "osx":
+    {
+        "path": "/usr/local/bin:$PATH"
+    },
+
+    "windows":
+    {
+        "cmd": ["python", "$packages\\Hogan-Build\\hulk.py", "$file", "${file_path}\\\\${file_base_name}.js"]
+    }
 }

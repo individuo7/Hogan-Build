@@ -1,7 +1,7 @@
 Mustache build system package for Sublime Text 2
 ======================================
 
-Provides build systems for `.mustache` files. Requires hulk (via hogan.js) on OSX and Linux.
+Provides build systems for `.mustache` files. Requires hulk (via [hogan.js](http://wbond.net/sublime_packages/package_control)).
 
 Installing
 ----------
@@ -10,12 +10,15 @@ Installing
 Installing Requirements
 ----------
 
-### Mac OS X / Linux(Ubuntu/Debian…)
-
-1. Install [NodeJS](http://nodejs.org)
-2. Install npm([NodeJS Package Manager](https://npmjs.org/doc/README.html))
-3. Install hogan.js
+1. Install [Pyhon](http://www.python.org)
+2. Install [NodeJS](http://nodejs.org)
+3. Install npm([NodeJS Package Manager](https://npmjs.org/doc/README.html))
+4. Install hogan.js via npm
 
 ## 
     npm install -g hogan.js
     
+### In Ubuntu
+
+##
+    sudo apt-get install node-legacy npm; sudo npm install -g hogan.js

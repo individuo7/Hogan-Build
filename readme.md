@@ -1,7 +1,7 @@
 Mustache build system package for Sublime Text 2
 ======================================
 
-Provides build systems for `.mustache` files. Requires hulk (via [hogan.js](http://wbond.net/sublime_packages/package_control)).
+Provides build systems for `.mustache` files. Requires hulk (via [hogan.js](http://twitter.github.com/hogan.js/)).
 
 Installing
 ----------

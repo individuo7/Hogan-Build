@@ -13,4 +13,8 @@ def mustache_compile(*args):
         f.close()
 
 if __name__ == "__main__":
-    mustache_compile(sys.argv)
+    try:
+        mustache_compile(sys.argv)
+    except:
+        print 'Make sure you have installed hogan.js'
+        print 'With node.js pakage manager: npm install -g hogan.js'

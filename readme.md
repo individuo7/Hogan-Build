@@ -30,3 +30,6 @@ Usage
 2. Select Hogan as Build System Tools > Build System > Hogan
 3. Compile a .mustache file (Ctrl-B)
 4. See compiled js file in the same directory
+
+You can access templates with *templates* variable in your javascript files
+

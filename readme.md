@@ -22,3 +22,11 @@ Installing Requirements
 
 ##
     sudo apt-get install node-legacy npm; sudo npm install -g hogan.js
+    
+Usage
+----------
+
+1. Open a mustache file
+2. Select Hogan as Build System Tools > Build System > Hogan
+3. Compile a .mustache file (Ctrl-B)
+4. See compiled js file in the same directory

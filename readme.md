@@ -31,5 +31,7 @@ Usage
 3. Compile a .mustache file (Ctrl-B)
 4. See compiled js file in the same directory
 
+Note: You must add Hogan-X.js at the base of the project. See https://github.com/twitter/hogan.js/tree/master/web/builds
+
 You can access templates with *templates* variable in your javascript files
 

@@ -8,7 +8,7 @@ def mustache_compile(*args):
     out, err = p.communicate()
     f = open(args[0][2], "w")
     try:
-        f.write(out.replace("var templates = {};","try {templates}catch(e){var templates={}}"))
+        f.write(out.replace("var templates = {};","if (templates) {} else {var templates={}}"))
     finally:
         f.close()
 
